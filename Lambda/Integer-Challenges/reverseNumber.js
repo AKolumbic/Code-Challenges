@@ -1,6 +1,6 @@
 /* 
 Reverse Number Challenge
-Write a function called reverseNumber that reverses a number.
+- Write a function called reverseNumber that reverses a number.
 
 example input: 12345 / example output: 54321
 */
@@ -19,7 +19,8 @@ function reverseNumber(n) {
 }
 
 function forloop_reverseNumber(n) {
-    for (let reversed=0; n; n = Math.floor(n / 10)) {
+    // NOTE: reversed needs to be defined as a var, let will not work throws errors
+    for (var reversed=0; n; n = Math.floor(n / 10)) {
         reversed *= 10;
         reversed += n % 10;
     }

@@ -1,4 +1,10 @@
-// Write a function that takes in a string, reverses the 'casing' of that string.
+/* 
+
+Challenge: Reverse a String's Casing.
+- Write a function that takes in a string as input, 
+- reverse the 'casing' of that string.
+
+*/
 
 function reverseCase(str) {
     // we split the input string into an array of individual characters("letter") and then
