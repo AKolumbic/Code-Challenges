@@ -1,8 +1,7 @@
 /* 
 Reverse Number Challenge
 - Write a function called reverseNumber that reverses a number.
-
-example input: 12345 / example output: 54321
+- example input: 12345 / example output: 54321
 */
 
 function reverseNumber(n) {

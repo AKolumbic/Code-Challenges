@@ -1,9 +1,7 @@
 /* 
-
 Challenge: Reverse a String's Casing.
 - Write a function that takes in a string as input, 
 - reverse the 'casing' of that string.
-
 */
 
 function reverseCase(str) {
