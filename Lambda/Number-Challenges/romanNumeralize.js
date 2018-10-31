@@ -10,6 +10,9 @@ function romanNumeralize(num) {
   
   
     for(i=0;i<values.length;i++){
+        console.log(values[i])
+        console.log(num)
+        console.log(roman)
       if(num>=values[i]){
         if(5<=num && num<=8) num -= 5;
         else if(1<=num && num<=3) num -= 1;
@@ -23,4 +26,4 @@ function romanNumeralize(num) {
 }
   
   
-romanNumeralize(1874);
+console.log(romanNumeralize(1874));
