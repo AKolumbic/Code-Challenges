@@ -26,17 +26,17 @@ function romanNumeralize(n) {
     for (key in rome) {
       let value = rome[key];
       while (number >= value) {
-        console.log(`Step #${count}`);
-        console.log(`while (${number} >= ${value})`);
-        console.log(`${returnString === '' ? '""' : returnString} += ${key} ---> ${returnString + key}`);
+        // console.log(`Step #${count}`);
+        // console.log(`while (${number} >= ${value})`);
+        // console.log(`${returnString === '' ? '""' : returnString} += ${key} ---> ${returnString + key}`);
         returnString += key;
-        console.log(`${number} -= ${value} ---> ${number - value}\n`);
+        // console.log(`${number} -= ${value} ---> ${number - value}\n`);
         number -= value;
         count++;
       }
     }
-    console.log(`The functions "number" variable changes: ${number}`);
-    console.log(`The input argument "n" remains the same: ${n}`);
+    // console.log(`The functions "number" variable changes: ${number}`);
+    // console.log(`The input argument "n" remains the same: ${n}`);
     return returnString;
   }
   console.log(romanNumeralize(1973)); // ~~~> MCMLXXIII
