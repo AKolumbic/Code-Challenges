@@ -25,26 +25,25 @@ STEPS/PLAN:
 */
 
 function uniqueInOrder(input) {
-    // if (input = String) {
-        const spliced = input.split('');
-        console.log(spliced[0]);
-        const output = [spliced[0]];
+    let inputArr = [];
+    const output = [];
+    
+    if(Array.isArray(input) == true) {
+        inputArr = input;
+    } else { 
+        inputArr = input.split('');
+    }
 
-        for(let i=0; i<spliced.length; i++) {
-            for(let j=0; j<spliced.length; j++) {
-                // console.log("I", input[i]);
-                // console.log("J", input[j]);
-            }
+    inputArr.forEach(item => {
+        if (output.includes(item) == false) {
+            output.push(item);
         }
+    });
 
-
-        return output;
-    // }
-    // } else if (input = Array) {
-    //     console.log("You're seeing this because input is an array");
-    // }
+    return output;
 }
 
 
 console.log(uniqueInOrder('AAAABBBCCDAABBB'))
-// console.log(uniqueInOrder([1,2,2,3,3]) )
+console.log(uniqueInOrder([1,2,2,3,3]))
+console.log(uniqueInOrder('ABBCcAD'))
