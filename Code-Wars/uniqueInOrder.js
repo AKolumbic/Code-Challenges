@@ -44,6 +44,6 @@ function uniqueInOrder(input) {
 }
 
 
-console.log(uniqueInOrder('AAAABBBCCDAABBB'))
-console.log(uniqueInOrder([1,2,2,3,3]))
-console.log(uniqueInOrder('ABBCcAD'))
+console.log(uniqueInOrder('AAAABBBCCDAABBB')) // [ 'A', 'B', 'C', 'D' ]
+console.log(uniqueInOrder([1,2,2,3,3])) // [ 1, 2, 3 ]
+console.log(uniqueInOrder('ABBCcAD')) // [ 'A', 'B', 'C', 'c', 'D' ]
