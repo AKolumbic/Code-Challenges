@@ -92,11 +92,11 @@ function sumOfDigits (num) {
   // TEST SUITE
   const x = 12345;
   console.log(sumOfDigits(x));           // ~~~> 15
-  // console.log(sumOfDigits(23));          // ~~~> 5
-  // console.log(sumOfDigits(496));         // ~~~> 19
-  // console.log(typeof(sumOfDigits(496))); // ~~~> number
-  // console.log(typeof(Number(x)));        // <--- number
-  // console.log(typeof(String(x)));        // <--- string
-  // console.log(typeof(parseInt(x)));      // <--- number
-  // console.log(String(x).split(''));      // <--- [ '1', '2', '3', '4', '5' ]
+  console.log(sumOfDigits(23));          // ~~~> 5
+  console.log(sumOfDigits(496));         // ~~~> 19
+  console.log(typeof(sumOfDigits(496))); // ~~~> number
+  console.log(typeof(Number(x)));        // <--- number
+  console.log(typeof(String(x)));        // <--- string
+  console.log(typeof(parseInt(x)));      // <--- number
+  console.log(String(x).split(''));      // <--- [ '1', '2', '3', '4', '5' ]
   
