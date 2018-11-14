@@ -52,4 +52,3 @@ console.log("Correct Output: ")
 console.log(toWeirdCase( "String" ));//=> returns "StRiNg"
 console.log(toWeirdCase( "Weird string case" ));//=> returns "WeIrD StRiNg CaSe"
 console.log("\n");
-
