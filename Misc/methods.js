@@ -25,7 +25,7 @@ let methods = {
     }
 }
 
-if ((!methods[operation]) || (a||x == NaN)) {
+if ((!methods[operation]) || (a||b == NaN)) {
     console.log("Invalid Input")
 }
 
