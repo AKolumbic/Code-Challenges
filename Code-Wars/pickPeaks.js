@@ -26,9 +26,46 @@ For example: pickPeaks([1, 2, 2, 2, 1]) returns {pos: [1], peaks: [2]} (or equiv
 
 */
 
-function pickPeaks(arr){
+// function pickPeaks(arr){
+//     let prev = 0;
+//     let curr = 0;
+//     const pos = [];
+//     const peaks = [];
+
+//     for (let i=0; i<arr.length; i++) {
+//         if (arr[i] > arr[curr]) {
+//             prev = curr;
+//             curr = arr[i];
+//         } else if (arr[i] < arr[curr]) {
+//             if (arr[prev] < arr[curr]) {
+//                 pos.push(curr);
+//                 peaks.push(arr[curr])
+//             }
+//             prev = curr;
+//             curr = arr[i]
+//         }
+//     }
   
-    //  return {pos:[],peaks:[]}
+//     return {"pos": pos, "peaks": peaks};
+// }
+
+
+function pickPeaks(arr) {
+    var pos = [];
+    var peaks = [];
+    var lastIncreased = null;
+
+    for (let i=0; i<arr.length; i++) {
+      if (arr[i] > arr[i - 1]) {
+        lastIncreased = i;
+      } else if (arr[i - 1] > arr[i] && lastIncreased !== null) {
+        pos.push(lastIncreased);
+        peaks.push(arr[lastIncreased]);
+        lastIncreased = null;
+      }
+    };
+
+    return { "pos": pos, "peaks": peaks };
 }
 
 const arr = [0, 1, 2, 5, 1, 0] // {pos: [3], peak:[5]}
