@@ -10,7 +10,7 @@ function solution(input) {
     const arr = input.split('');
     const output = [];
     
-    for (let i=0; i<arr.length; i=i+2) { 
+    for (let i=0; i<arr.length; i+=2) { 
         const pairs = [];
 
         pairs.push(arr[i], arr[i+1]);
