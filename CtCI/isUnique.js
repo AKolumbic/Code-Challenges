@@ -3,9 +3,6 @@
 Implement an algorithm to determine if a string has all unique characters.
 What if you cannot use additional data structures?
 
-Plan:
-1. Ask if input is ALWAYS a string, if not, then toString()
-2. 
 */
 
 function isUnique(input) {
@@ -24,7 +21,6 @@ function isUnique(input) {
 
 function one_liner(input) {
     const arr = input.split('')
-
     return (new Set(arr)).size == arr.length;
 }
 
